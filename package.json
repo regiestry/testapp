@@ -1,0 +1,14 @@
+{
+  "name": "connection-test-webapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple webapp to test local and GitHub API connectivity",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
