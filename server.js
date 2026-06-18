@@ -48,6 +48,17 @@ app.get('/api/github', async (_req, res) => {
   }
 });
 
+app.get('/api/serverinfo', (_req, res) => {
+  res.json({
+    ok: true,
+    node: process.version,
+    platform: process.platform,
+    arch: process.arch,
+    uptimeSeconds: Math.floor(process.uptime()),
+    memoryMB: Math.round(process.memoryUsage().rss / 1024 / 1024)
+  });
+});
+
 app.listen(port, () => {
   console.log(`Connection test app running at http://localhost:${port}`);
 });

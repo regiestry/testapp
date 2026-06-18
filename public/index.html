@@ -8,7 +8,7 @@
   </head>
   <body>
     <main class="container">
-      <h1>Connection Test <span class="badge">v2</span></h1>
+      <h1>Connection Test <span class="badge">v3</span></h1>
       <p class="subtitle">Use these checks to verify your local server and outbound connectivity.</p>
 
       <button id="runAllBtn" class="run-all">Run All Checks</button>
@@ -23,6 +23,12 @@
         <h2>GitHub API Reachability <span class="status" id="githubStatus"></span></h2>
         <button id="githubBtn">Test /api/github</button>
         <pre id="githubOutput">Waiting...</pre>
+      </section>
+
+      <section class="card">
+        <h2>Server Info <span class="status" id="serverinfoStatus"></span></h2>
+        <button id="serverinfoBtn">Test /api/serverinfo</button>
+        <pre id="serverinfoOutput">Waiting...</pre>
       </section>
     </main>
 

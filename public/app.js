@@ -26,7 +26,12 @@ document.getElementById('githubBtn').addEventListener('click', () => {
   runCheck('/api/github', 'githubOutput', 'githubStatus');
 });
 
+document.getElementById('serverinfoBtn').addEventListener('click', () => {
+  runCheck('/api/serverinfo', 'serverinfoOutput', 'serverinfoStatus');
+});
+
 document.getElementById('runAllBtn').addEventListener('click', () => {
   runCheck('/api/health', 'healthOutput', 'healthStatus');
   runCheck('/api/github', 'githubOutput', 'githubStatus');
+  runCheck('/api/serverinfo', 'serverinfoOutput', 'serverinfoStatus');
 });
