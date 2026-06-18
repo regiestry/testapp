@@ -8,17 +8,19 @@
   </head>
   <body>
     <main class="container">
-      <h1>Connection Test</h1>
+      <h1>Connection Test <span class="badge">v2</span></h1>
       <p class="subtitle">Use these checks to verify your local server and outbound connectivity.</p>
 
+      <button id="runAllBtn" class="run-all">Run All Checks</button>
+
       <section class="card">
-        <h2>Local API Health</h2>
+        <h2>Local API Health <span class="status" id="healthStatus"></span></h2>
         <button id="healthBtn">Test /api/health</button>
         <pre id="healthOutput">Waiting...</pre>
       </section>
 
       <section class="card">
-        <h2>GitHub API Reachability</h2>
+        <h2>GitHub API Reachability <span class="status" id="githubStatus"></span></h2>
         <button id="githubBtn">Test /api/github</button>
         <pre id="githubOutput">Waiting...</pre>
       </section>
